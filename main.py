@@ -9,7 +9,7 @@ GPIO.cleanup()
 GPIO.setmode(GPIO.BCM)
 
 
-camera = cv2.VideoCapture(0)
+camera = cv2.VideoCapture(-1, 2)
 app = Flask(__name__)
 
 set_mode("Off")
