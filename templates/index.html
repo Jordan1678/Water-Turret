@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<script src="{{url_for('static', filename='js/TurretControl.js')}}"></script>
+<script src="{{url_for('static', filename='js/ToggleMode.js')}}"></script>
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Water Turret</title>
+</head>
+
+<body>
+<h2 id="Header">Current Mode: </h2>
+<!-- This Is The Video Stream -->
+<img src="{{ url_for('video_feed') }}" alt="Video Stream" onclick=>
+<br>
+
+<!-- Control Options in a drop-down menu -->
+<label for="ControlOptions">Control Options:</label>
+<br>
+<select id="ControlOptions">
+    <option value="Off">Off</option>
+    <option value="Manual">Manual</option>
+    <option value="Auto">Auto</option>
+</select>
+<button id="ModeToggle">Set Mode</button>
+<br>
+<button id="Fire">Fire!</button>
+<button id="Stop">Stop</button>
+<br> (Buttons only works in manual mode)
+
+</body>
+</html>
