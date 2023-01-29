@@ -11,7 +11,7 @@ $(document).ready(function() {
         })
     });
 
-    $("#ModeToggle").on("click", function() {
+    $("#Fire").on("click", function() {
         CurrentMode = $('#ControlOptions').val();
         url = window.location.protocol + "//" + window.location.host + "/TurretMode";
         $.ajax(url, {
@@ -22,7 +22,7 @@ $(document).ready(function() {
         })
     });
 
-    $("#ModeToggle").on("click", function() {
+    $("#Stop").on("click", function() {
         CurrentMode = $('#ControlOptions').val();
         url = window.location.protocol + "//" + window.location.host + "/TurretMode";
         $.ajax(url, {
